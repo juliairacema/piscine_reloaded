@@ -6,7 +6,7 @@
 /*   By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/17 02:07:05 by dhojt             #+#    #+#             */
-/*   Updated: 2018/03/17 02:32:10 by dhojt            ###   ########.fr       */
+/*   Updated: 2018/03/17 02:52:56 by dhojt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ size_t	ft_strlen(const char *str);
 **Piscine Reloaded functions
 */
 void	ft_print_alphabet(void);
+void	ft_print_numbers(void);
 
 #endif
