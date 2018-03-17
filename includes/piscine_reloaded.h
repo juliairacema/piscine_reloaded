@@ -6,7 +6,7 @@
 /*   By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/17 02:07:05 by dhojt             #+#    #+#             */
-/*   Updated: 2018/03/17 03:35:43 by dhojt            ###   ########.fr       */
+/*   Updated: 2018/03/17 03:45:50 by dhojt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ void	ft_print_alphabet(void);
 void	ft_print_numbers(void);
 void	ft_is_negative(int n);
 void	ft_ft(int *nbr);
+void	ft_swap(int *a, int *b);
 
 #endif

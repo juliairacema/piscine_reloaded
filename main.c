@@ -51,6 +51,29 @@ void	ex09(void)
 	ft_putstr("\n\n");
 }
 
+void	ex10(void)
+{
+	int a;
+	int b;
+	int *a1;
+	int *b1;
+
+	a = 27;
+	b = 42;
+	a1 = &a;
+	b1 = &b;
+
+	ft_putstr("ex10\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("42 27\n");
+	ft_putstr("Result:\n\t");
+	ft_swap(a1, b1);
+	ft_putnbr(*a1);
+	ft_putstr(" ");
+	ft_putnbr(*b1);
+	ft_putstr("\n\n");
+}
+
 int		main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -63,6 +86,8 @@ int		main(int argc, char **argv)
 			ex08();
 		if (ft_strcmp(argv[1], "ex09") == 0)
 			ex09();
+		if (ft_strcmp(argv[1], "ex10") == 0)
+			ex10();
 	}
 	return (0);
 }
