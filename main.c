@@ -97,6 +97,31 @@ void	ex11(void)
 	ft_putstr("\n\n");
 }
 
+void	ex12(void)
+{
+	ft_putstr("ex12\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("0 0 1 1 6 5040 479001600 0\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(ft_iterative_factorial(-42));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(-1));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(0));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(1));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(3));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(7));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(12));
+	ft_putstr(" ");
+	ft_putnbr(ft_iterative_factorial(13));
+	ft_putstr(" ");
+	ft_putstr("\n\n");
+}
+
 int		main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -113,6 +138,8 @@ int		main(int argc, char **argv)
 			ex10();
 		if (ft_strcmp(argv[1], "ex11") == 0)
 			ex11();
+		if (ft_strcmp(argv[1], "ex12") == 0)
+			ex12();
 	}
 	return (0);
 }
