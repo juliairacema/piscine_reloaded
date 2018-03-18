@@ -122,6 +122,104 @@ void	ex12(void)
 	ft_putstr("\n\n");
 }
 
+void	ex13(void)
+{
+	ft_putstr("ex13\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("0 0 1 1 6 5040 479001600 0\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(ft_recursive_factorial(-42));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(-1));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(0));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(1));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(3));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(7));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(12));
+	ft_putstr(" ");
+	ft_putnbr(ft_recursive_factorial(13));
+	ft_putstr(" ");
+	ft_putstr("\n\n");
+}
+
+void	ex14(void)
+{
+	ft_putstr("ex14\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("0 0 0 0 0 2 4 11 12 0\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(ft_sqrt(-42));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(-1));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(0));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(1));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(2));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(4));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(16));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(121));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(144));
+	ft_putstr(" ");
+	ft_putnbr(ft_sqrt(145));
+	ft_putstr(" ");
+	ft_putstr("\n\n");
+}
+
+void	ex15(void)
+{
+	ft_putstr("ex15\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("Some Text\n");
+	ft_putstr("Result:\n\t");
+	ft_putstr("Some Text");
+	ft_putstr("\n\n");
+}
+
+void	ex16(void)
+{
+	ft_putstr("ex16\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("3 0 1 7\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(ft_strlen("Cat"));
+	ft_putstr(" ");
+	ft_putnbr(ft_strlen(""));
+	ft_putstr(" ");
+	ft_putnbr(ft_strlen("B"));
+	ft_putstr(" ");
+	ft_putnbr(ft_strlen("Ann\nDav"));
+	ft_putstr(" ");
+	ft_putstr("\n\n");
+}
+
+void	ex17(void)
+{
+	ft_putstr("ex17\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("0 0 2 1\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(ft_strcmp("Cat", "Cat"));
+	ft_putstr(" ");
+	ft_putnbr(ft_strcmp("", ""));
+	ft_putstr(" ");
+	ft_putnbr(ft_strcmp("Becausg", "Because"));
+	ft_putstr(" ");
+	ft_putnbr(ft_strcmp("Ann\nDav", "Ann\tDav"));
+	ft_putstr(" ");
+	ft_putstr("\n\n");
+}
+
 int		main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -140,6 +238,16 @@ int		main(int argc, char **argv)
 			ex11();
 		if (ft_strcmp(argv[1], "ex12") == 0)
 			ex12();
+		if (ft_strcmp(argv[1], "ex13") == 0)
+			ex13();
+		if (ft_strcmp(argv[1], "ex14") == 0)
+			ex14();
+		if (ft_strcmp(argv[1], "ex15") == 0)
+			ex15();
+		if (ft_strcmp(argv[1], "ex16") == 0)
+			ex16();
+		if (ft_strcmp(argv[1], "ex17") == 0)
+			ex17();
 	}
 	return (0);
 }
