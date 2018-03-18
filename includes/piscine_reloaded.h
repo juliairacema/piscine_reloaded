@@ -6,7 +6,7 @@
 /*   By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/17 02:07:05 by dhojt             #+#    #+#             */
-/*   Updated: 2018/03/17 12:54:39 by dhojt            ###   ########.fr       */
+/*   Updated: 2018/03/18 16:26:36 by dhojt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,7 @@ int		ft_sqrt(int nb);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
 int		ft_strcmp(char *s1, char *s2);
+char	*ft_strdup(char *src);
+int		*ft_range(int min, int max);
 
 #endif
