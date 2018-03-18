@@ -1,4 +1,5 @@
 #include "piscine_reloaded.h"
+#include "ft_abs.h"
 
 void	ex06(void)
 {
@@ -220,6 +221,65 @@ void	ex17(void)
 	ft_putstr("\n\n");
 }
 
+void	ex20(void)
+{
+	char *str;
+
+	str = ft_strdup("Hello, world!");
+	ft_putstr("ex20\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("Hello, world!\n");
+	ft_putstr("Result:\n\t");
+	ft_putstr(str);
+	ft_putstr("\n\n");
+}
+
+void	ex21(void)
+{
+	int *ptr;
+	int a;
+	int b;
+
+	a = 27;
+	b = 43;
+	if ((ptr = ft_range(a, b)))
+	{
+		ft_putstr("ex20\n");
+		ft_putstr("Expecting:\n\t");
+		ft_putstr("27282930313233343536373839404142\n");
+		ft_putstr("Result:\n\t");
+		while (a++ < b)
+		{
+			ft_putnbr(*ptr);
+			ptr++;
+		}
+		ft_putstr("\n\n");
+	}
+}
+
+void	ex22(void)
+{
+	int		a;
+	int		b;
+	int		c;
+
+	a = ABS(-27);
+	b = ABS(0);
+	c = ABS(42);
+
+	ft_putstr("ex22\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("27 0 42\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(ABS(a));
+	ft_putchar(' ');
+	ft_putnbr(ABS(b));
+	ft_putchar(' ');
+	ft_putnbr(ABS(c));
+	ft_putchar(' ');
+	ft_putstr("\n\n");
+}
+
 int		main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -248,6 +308,12 @@ int		main(int argc, char **argv)
 			ex16();
 		if (ft_strcmp(argv[1], "ex17") == 0)
 			ex17();
+		if (ft_strcmp(argv[1], "ex20") == 0)
+			ex20();
+		if (ft_strcmp(argv[1], "ex21") == 0)
+			ex21();
+		if (ft_strcmp(argv[1], "ex22") == 0)
+			ex22();
 	}
 	return (0);
 }
