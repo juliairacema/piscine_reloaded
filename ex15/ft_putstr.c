@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/27 15:37:29 by dhojt             #+#    #+#             */
-/*   Updated: 2018/01/30 22:14:43 by dhojt            ###   ########.fr       */
+/*   Created: 2018/03/17 12:21:14 by dhojt             #+#    #+#             */
+/*   Updated: 2018/03/17 12:22:18 by dhojt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+void	ft_putchar(char c);
 
-int		ft_strcmp(const char *s1, const char *s2)
+void	ft_putstr(char *str)
 {
-	if (ft_strlen(s1) > ft_strlen(s2))
-		return(ft_strncmp(s1, s2, (ft_strlen(s1))));
-	return(ft_strncmp(s1, s2, (ft_strlen(s2))));
+	while (*str)
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }

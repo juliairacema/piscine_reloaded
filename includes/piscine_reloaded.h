@@ -6,7 +6,7 @@
 /*   By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/17 02:07:05 by dhojt             #+#    #+#             */
-/*   Updated: 2018/03/17 10:40:59 by dhojt            ###   ########.fr       */
+/*   Updated: 2018/03/17 12:54:39 by dhojt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,10 @@
 */
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
-void	ft_putstr(char const *s);
-void	ft_putstr_fd(char const *s, int fd);
 void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
 char	*ft_strnew(size_t size);
-int		ft_strcmp(const char *s1, const char *s2);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-size_t	ft_strlen(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 
@@ -45,8 +40,8 @@ void	ft_div_mod(int a, int b, int *div, int *mod);
 int		ft_iterative_factorial(int nb);
 int		ft_recursive_factorial(int nb);
 int		ft_sqrt(int nb);
-//void	ft_putstr(char *str);
-//int		ft_strlen(char *str);
-//int		ft_strcmp(char *s1, char *s2);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
 
 #endif
