@@ -1,5 +1,6 @@
 #include "piscine_reloaded.h"
 #include "ft_abs.h"
+#include "ft_point.h"
 
 void	ex06(void)
 {
@@ -280,6 +281,28 @@ void	ex22(void)
 	ft_putstr("\n\n");
 }
 
+void	ex23slave(t_point *point)
+{
+	point->x = 42;
+	point->y = 21;
+}
+
+void	ex23(void)
+{
+	t_point		point;
+
+	ex23slave(&point);
+
+	ft_putstr("ex20\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("42 21\n");
+	ft_putstr("Result:\n\t");
+	ft_putnbr(point.x);
+	ft_putchar(' ');
+	ft_putnbr(point.y);
+	ft_putstr("\n\n");
+}
+
 int		main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -314,6 +337,8 @@ int		main(int argc, char **argv)
 			ex21();
 		if (ft_strcmp(argv[1], "ex22") == 0)
 			ex22();
+		if (ft_strcmp(argv[1], "ex23") == 0)
+			ex23();
 	}
 	return (0);
 }
