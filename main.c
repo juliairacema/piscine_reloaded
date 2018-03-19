@@ -293,13 +293,27 @@ void	ex23(void)
 
 	ex23slave(&point);
 
-	ft_putstr("ex20\n");
+	ft_putstr("ex23\n");
 	ft_putstr("Expecting:\n\t");
 	ft_putstr("42 21\n");
 	ft_putstr("Result:\n\t");
 	ft_putnbr(point.x);
 	ft_putchar(' ');
 	ft_putnbr(point.y);
+	ft_putstr("\n\n");
+}
+
+void	ex25(void)
+{
+	//void	(*f)(int);
+	int		num[3] = {0, 27, 42};
+
+	//f = ft_putnbr;
+	ft_putstr("ex25\n");
+	ft_putstr("Expecting:\n\t");
+	ft_putstr("02742\n");
+	ft_putstr("Result:\n\t");
+	ft_foreach(num, 3, &ft_putnbr);
 	ft_putstr("\n\n");
 }
 
@@ -339,6 +353,8 @@ int		main(int argc, char **argv)
 			ex22();
 		if (ft_strcmp(argv[1], "ex23") == 0)
 			ex23();
+		if (ft_strcmp(argv[1], "ex25") == 0)
+			ex25();
 	}
 	return (0);
 }

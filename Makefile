@@ -6,7 +6,7 @@
 #    By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/17 02:35:30 by dhojt             #+#    #+#              #
-#    Updated: 2018/03/18 22:11:48 by dhojt            ###   ########.fr        #
+#    Updated: 2018/03/19 03:18:23 by dhojt            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ CFILE = ex06/*.c \
 			  ex17/*.c \
 			  ex20/*.c \
 			  ex21/*.c \
+			  ex25/*.c \
 
 gcc:
 	gcc -I includes -I ex22 -I ex23 -o piscine_reloaded src/*.c main.c $(CFILE)
