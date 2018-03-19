@@ -305,10 +305,8 @@ void	ex23(void)
 
 void	ex25(void)
 {
-	//void	(*f)(int);
 	int		num[3] = {0, 27, 42};
 
-	//f = ft_putnbr;
 	ft_putstr("ex25\n");
 	ft_putstr("Expecting:\n\t");
 	ft_putstr("02742\n");
@@ -317,9 +315,20 @@ void	ex25(void)
 	ft_putstr("\n\n");
 }
 
+void	ex26(char **argv)
+{
+		ft_putstr("ex26\n");
+		ft_putstr("***Do:\n***./piscine_reloaded ex26 Hello 27 Ann 42 Cat 7Eleven\n");
+		ft_putstr("Expecting:\n\t");
+		ft_putstr("2\n");
+		ft_putstr("Result:\n\t");
+		ft_putnbr(ft_count_if(argv, &ft_str_is_numeric));
+		ft_putstr("\n\n");
+}
+
 int		main(int argc, char **argv)
 {
-	if (argc == 2)
+	if (argc > 1)
 	{
 		if (ft_strcmp(argv[1], "ex06") == 0)
 			ex06();
@@ -355,6 +364,13 @@ int		main(int argc, char **argv)
 			ex23();
 		if (ft_strcmp(argv[1], "ex25") == 0)
 			ex25();
+		if (ft_strcmp(argv[1], "ex26") == 0)
+		{
+			if (argc < 3)
+				ft_putstr("ex26\n\tDo:\n\t./piscine_reloaded ex26 Hello 27 Ann 42 Cat 7Eleven\n");
+			else
+				ex26(&argv[2]);
+		}
 	}
 	return (0);
 }

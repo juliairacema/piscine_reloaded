@@ -6,7 +6,7 @@
 /*   By: dhojt <dhojt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/17 02:07:05 by dhojt             #+#    #+#             */
-/*   Updated: 2018/03/19 03:09:53 by dhojt            ###   ########.fr       */
+/*   Updated: 2018/03/19 20:35:12 by dhojt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define PISCINE_RELOADED_H
 
 #include <unistd.h>
+#include <stdlib.h>
 
 /*
 **My functions
@@ -26,6 +27,9 @@ char	*ft_itoa(int n);
 char	*ft_strnew(size_t size);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
+int		ft_str_is_numeric(char *str);
+char	*ft_strnew(size_t size);
+char	*ft_strncpy(char *dst, const char *src, int len);
 
 
 /*
@@ -46,5 +50,6 @@ int		ft_strcmp(char *s1, char *s2);
 char	*ft_strdup(char *src);
 int		*ft_range(int min, int max);
 void	ft_foreach(int *tab, int length, void(*f)(int));
+int		ft_count_if(char **tab, int(*f)(char*));
 
 #endif
