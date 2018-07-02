@@ -1,5 +1,10 @@
 # piscine_reloaded
-Elementary project to rediscover C after the gap between the piscine and the start of the program.
+### Score 100/100
+##### Mandatory
+100/100
 ***
-### Score
-100 / 100
+### Challenge
+Elementary project. The Piscine Reloaded is a best-of of the exercises from during the Piscine C. As a reminder of the basics of the C programming language.
+***
+### Using the project
+The project is **not** desinged to be used. It is a rediscovery of C.
